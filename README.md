@@ -3,8 +3,9 @@
 # Description
 Create a web application that allows pirates to list ships for rental to landlubbers (me 'earties!).
 
-# MVP
-A pirate should be able to name their ship, provide a short description of the ship (rigging, sails etc.) and the price per week. This information should be visible to landlubbers wishing to hire a ship.
+# MVP <img align="right" src="./img/screengrab.png" width="250" />
+
+A pirate should be able to name their ship, provide a short description of the ship (rigging, sails etc.) and the price per week. This information should be visible to landlubbers wishing to hire a ship.(see attached image for example from AirBNB)
 
 ## User Stories
 
@@ -43,3 +44,9 @@ A pirate should be able to name their ship, provide a short description of the s
 * Sinatra Controller
   * Capybara Feature Testing
 * HTML/JQuery views
+
+### Contributors
+* [Fred Hollis](https://github.com/archmagos)
+* [Nabil Far](https://github.com/bilfar)
+* [Daniel Lau](https://github.com/dct-lau17)
+* [John Forster](https://github.com/JohnForster)
