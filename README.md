@@ -1,7 +1,7 @@
 # Makers-BNB
 
-## User Stories
+## Pirate Stories
 
-As a pirates
+As a pirate
 So that I can attract landlubbers
 I want to advertise multiple ships
