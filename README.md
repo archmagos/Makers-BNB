@@ -1,4 +1,4 @@
-# Pirates-BNB (Board 'n Booty) :ocean:
+## :ocean::ocean: Pirates-BNB (Board 'n Booty) :ocean::ocean:
 
 ## Description
 Create a web application that allows pirates to list ships for rental to landlubbers (me 'earties!).
@@ -9,8 +9,8 @@ A user should be able to name their ship, provide a short description of the shi
 
 # User Stories
 
-   As a pirate
-   So that I can advertise my ships  
+   As a pirate  
+   So that I can advertise my ships,    
    I want to be able to create a listing.  
 
    As a pirate  
