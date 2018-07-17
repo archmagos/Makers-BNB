@@ -1,13 +1,12 @@
-## :ocean::ocean: Pirates-BNB (Board 'n Booty) :ocean::ocean:
+# :ocean::ocean: Pirates-BNB (Board 'n Booty) :ocean::ocean:
 
-## Description
+# Description
 Create a web application that allows pirates to list ships for rental to landlubbers (me 'earties!).
 
-## MVP
+# MVP
+A pirate should be able to name their ship, provide a short description of the ship (rigging, sails etc.) and the price per week. This information should be visible to landlubbers wishing to hire a ship.
 
-A user should be able to name their ship, provide a short description of the ship (rigging, sails etc.) and the price per week.
-
-# User Stories
+## User Stories
 
    As a pirate  
    So that I can advertise my ships,    
@@ -37,7 +36,7 @@ A user should be able to name their ship, provide a short description of the shi
    So that all my friends can loot with me,  
    I want to be able to see the capacity of each ship.  
 
-# Tech Stack
+## Tech Stack
 * Javascript model
   * Testing with Jasmine
 * PG for database management.
