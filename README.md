@@ -3,7 +3,7 @@
 # Description
 Create a web application that allows pirates to list ships for rental to landlubbers (me 'earties!).
 
-# MVP <img align="right" src="./img/screengrab.png" width="200" />
+# MVP <img align="right" src="./img/screengrab.png" width="250" />
 
 A pirate should be able to name their ship, provide a short description of the ship (rigging, sails etc.) and the price per week. This information should be visible to landlubbers wishing to hire a ship.(see attached image for example from AirBNB)
 
