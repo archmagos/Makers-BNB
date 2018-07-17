@@ -5,6 +5,8 @@ class PiratesBNB < Sinatra::Base
   set :method_override, true
 
   get '/' do
-    erb(:index)
+    send_file './views/index.html'
   end
+
+  run! if app_file == $PROGRAM_NAME
 end
