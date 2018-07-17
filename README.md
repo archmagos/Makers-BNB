@@ -2,6 +2,6 @@
 
 ## User Stories
 
-As a property owner
-I want to multiple properties
-So that I can attract visitors
+As a pirates
+So that I can attract landlubbers
+I want to advertise multiple ships
