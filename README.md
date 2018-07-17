@@ -44,3 +44,9 @@ A pirate should be able to name their ship, provide a short description of the s
 * Sinatra Controller
   * Capybara Feature Testing
 * HTML/JQuery views
+
+### Contributors
+* [Fred Hollis](https://github.com/archmagos)
+* [Nabil Far](https://github.com/bilfar)
+* [Daniel Lau](https://github.com/dct-lau17)
+* [John Forster](https://github.com/JohnForster)
