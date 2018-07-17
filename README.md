@@ -1,4 +1,4 @@
-# Makers-BNB (Board 'n Booty) :ocean:
+# Pirates-BNB (Board 'n Booty) :ocean:
 
 ## Description
 Create a web application that allows pirates to list ships for rental to landlubbers (me 'earties!).
