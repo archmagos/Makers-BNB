@@ -1,3 +1,3 @@
-quire './app.rb'
+require './app.rb'
 
 run PiratesBNB
