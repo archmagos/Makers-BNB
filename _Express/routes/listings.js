@@ -3,6 +3,7 @@ var router = express.Router();
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
+  //listings = $.getJson('localhost:9292/listings');
   mockJSON = {
     "listings": [
       { "title":"Jolly Roger", "description":"This ship is baller", "price":2400},
