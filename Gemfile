@@ -1,6 +1,7 @@
 source 'https://rubygems.org'
 
 require 'capybara'
+require 'json'
 require 'rspec'
 require 'rubocop'
 require 'simplecov'
