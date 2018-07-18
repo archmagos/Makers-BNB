@@ -1,4 +1,5 @@
 require 'sinatra/base'
+# require 'sinatra/json'
 
 # Understands loading and managing pages appropriate to the website
 class PiratesBNB < Sinatra::Base
@@ -9,7 +10,15 @@ class PiratesBNB < Sinatra::Base
   end
 
   post '/listings' do
-    DatabaseHandler.create(title: params['title'],price: params['price'], description: params['description'] )
+    DatabaseHandler.create(
+      title: params['title'],
+      price: params['price'],
+      description: params['description']
+    )
+  end
+
+  post '/listings' do
+    DatabaseHandler.all
   end
 
   run! if app_file == $PROGRAM_NAME
