@@ -17,7 +17,7 @@ class PiratesBNB < Sinatra::Base
     )
   end
 
-  post '/listings' do
+  get '/listings' do
     DatabaseHandler.all
   end
 
