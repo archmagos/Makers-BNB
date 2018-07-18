@@ -2,5 +2,9 @@ extends layout
 
 block content
   h1 This is the listings page
-  h1 ship =listings.listings[0].title
-  body= listings.listings[0].description
+  each listing in mockJSON.listings
+    div.listing_display.
+      Picture here<br>
+      Title: #{listing.title}<br>
+      Desc: #{listing.description}<br>
+      Price: #{listing.price}<br><br>

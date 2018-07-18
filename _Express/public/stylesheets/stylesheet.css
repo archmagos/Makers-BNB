@@ -22,3 +22,7 @@ input[type=submit] {
 #description{
   height: 250px;
 }
+
+.listing_display {
+  display: inline;
+}
