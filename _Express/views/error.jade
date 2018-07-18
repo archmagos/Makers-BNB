@@ -1,0 +1,8 @@
+extends layout
+
+block content
+  h1 With a bottle of rum and a yo ho- ...oh....
+
+  h2= error.status
+  h2 ☠️ You've got your map upside down! ☠️
+  pre #{error.stack}
