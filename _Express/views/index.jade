@@ -1,0 +1,15 @@
+extends layout
+
+block content
+  center
+    h1 Welcome to Pirates BnB Control Panel
+    div(style="padding: 30px;")
+      form.user-input(method='post')
+        input#title(type='text' name='title' placeholder='Title')
+        input#price(type='text' name='price' placeholder='Price')
+        input#description(type='text' name='description' placeholder='Description')
+        input#submit-details(type='submit' value='submit')
+
+  script(src="https://code.jquery.com/jquery-2.1.4.min.js")
+  script(src="/javascripts/interface.js")
+  script(src="/javascripts/listing.js")
