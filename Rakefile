@@ -44,6 +44,6 @@ task :setup_test_database do
 
   con = PG.connect dbname: 'piratesbnb_test'
 
-  con.exec 'TRUNCATE users, peeps'
+  con.exec 'TRUNCATE listings'
   print "☠️  Your database tables are ready for action. Happy pirating.\n"
 end
