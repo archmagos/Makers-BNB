@@ -40,10 +40,17 @@ A pirate should be able to name their ship, provide a short description of the s
 ## Tech Stack
 * Javascript model
   * Testing with Jasmine
+* Express Controller for front-end.
 * PG for database management.
-* Sinatra Controller
-  * Capybara Feature Testing
+* Sinatra Controller for database management.
+  * Cypress for Feature Testing
 * HTML/JQuery views
+
+## Implementation
+To run the front-end Express server, navigate to \_Express and run: `npm install`
+
+## Testing
+./node_modules/.bin/cypress open
 
 ### Contributors
 * [Fred H](https://github.com/archmagos)
