@@ -1,4 +1,5 @@
 require 'sinatra/base'
+require './lib/database_handler.rb'
 # require 'sinatra/json'
 require './database_connection_setup'
 
@@ -16,6 +17,7 @@ class PiratesBNB < Sinatra::Base
       price: params['price'],
       description: params['description']
     )
+    redirect 'http://localhost:3000/listings'
   end
 
   get '/listings' do
