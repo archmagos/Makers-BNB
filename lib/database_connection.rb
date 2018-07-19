@@ -10,7 +10,6 @@ class DatabaseConnection
   end
 
   def self.query(sql)
-    self.setup('piratesbnb')
     @connection.exec(sql)
   end
 end

@@ -15,6 +15,9 @@ class PiratesBNB < Sinatra::Base
     DatabaseHandler.create(
       title: params['title'],
       price: params['price'],
+      image_url: params['image_url'],
+      rating: params['rating'],
+      capacity: params['capacity'],
       description: params['description']
     )
     redirect 'http://localhost:3000/listings'

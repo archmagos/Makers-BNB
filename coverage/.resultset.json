@@ -1,7 +1,7 @@
 {
   "RSpec": {
     "coverage": {
-      "/Users/daniellau/Projects/Makers-BNB/spec/database_connection_spec.rb": [
+      "/Users/nabilo/code/projects/week6/Makers-BNB/spec/database_connection_spec.rb": [
         1,
         null,
         1,
@@ -28,30 +28,13 @@
         null,
         null
       ],
-      "/Users/daniellau/Projects/Makers-BNB/lib/database_connection.rb": [
-        1,
-        null,
-        1,
-        null,
-        1,
-        3,
-        null,
-        null,
-        1,
-        1,
-        null,
-        null,
-        1,
-        6,
-        null,
-        null
-      ],
-      "/Users/daniellau/Projects/Makers-BNB/spec/datbase_handler_spec.rb": [
+      "/Users/nabilo/code/projects/week6/Makers-BNB/spec/datbase_handler_spec.rb": [
         1,
         1,
         1,
         null,
         1,
+        null,
         1,
         1,
         1,
@@ -60,46 +43,42 @@
         2,
         2,
         2,
+        2,
+        2,
+        2,
+        null,
+        null,
+        1,
+        1,
+        1,
+        null,
+        1,
+        1,
+        null,
+        2,
+        2,
         null,
         null,
         null,
+        null,
         1,
         1,
         1,
         1,
         1,
         1,
+        null,
+        null,
         1,
         3,
         3,
         null,
         null,
         null,
-        null,
-        null
-      ],
-      "/Users/daniellau/Projects/Makers-BNB/lib/database_handler.rb": [
-        1,
-        1,
-        null,
-        1,
-        1,
-        3,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        1,
-        1,
-        null,
-        3,
         null,
         null
       ]
     },
-    "timestamp": 1531936376
+    "timestamp": 1532008305
   }
 }
