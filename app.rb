@@ -1,6 +1,7 @@
 require 'sinatra/base'
 require './lib/database_handler.rb'
 # require 'sinatra/json'
+require './database_connection_setup'
 
 # Understands loading and managing pages appropriate to the website
 class PiratesBNB < Sinatra::Base
