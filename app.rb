@@ -1,4 +1,5 @@
 require 'sinatra/base'
+require './lib/database_handler.rb'
 # require 'sinatra/json'
 require './database_connection_setup'
 
