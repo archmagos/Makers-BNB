@@ -1,5 +1,6 @@
 require 'pg'
 require 'json'
+require './lib/database_connection.rb'
 
 class DatabaseHandler
   def self.create(listing)
@@ -14,6 +15,6 @@ class DatabaseHandler
   def self.all
     result = DatabaseConnection.query("SELECT * FROM listings")
     # maps pg object to array of hashes and converts to json
-    result.map { |listing| listing }.to_json
+    {'listings' => result.map { |listing| listing }}.to_json
   end
 end

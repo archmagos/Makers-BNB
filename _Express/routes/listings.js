@@ -1,6 +1,9 @@
 var express = require('express');
 var router = express.Router();
 var $ = require('jquery');
+var fetcher = function(url){
+  $.getJSON(url);
+}
 
 // require("jsdom").env("", function(err, window) {
 // 	if (err) {
@@ -10,11 +13,28 @@ var $ = require('jquery');
 //
 // 	$ = require("jquery")(window);
 // });
-
+// function loadJSON(path)//, success, error)
+// {
+//     var xhr = new XMLHttpRequest();
+//     // xhr.onreadystatechange = function()
+//     // {
+//     //     if (xhr.readyState === XMLHttpRequest.DONE) {
+//     //         if (xhr.status === 200) {
+//     //             if (success)
+//     //                 success(JSON.parse(xhr.responseText));
+//     //         } else {
+//     //             if (error)
+//     //                 error(xhr);
+//     //         }
+//     //     }
+//     // };
+//     xhr.open("GET", path, true);
+//     xhr.send();
+// }
 /* GET home page. */
 router.get('/', function(req, res, next) {
   console.log($);
-  listings = $.getJSON('http://localhost:9292/listings')
+  listings = fetcher('http://localhost:9292/listings');
 
   // mockJSON = {
   //   "listings": [
