@@ -50,6 +50,9 @@ A pirate should be able to name their ship, provide a short description of the s
 To run the front-end Express server, navigate to \_Express and run: `npm install`
 
 ## Testing
+npm install cypress
+npm start
+ruby app.rb
 ./node_modules/.bin/cypress open
 
 ### Contributors
