@@ -18,7 +18,7 @@ task :build do
 
     con = PG.connect(dbname: "#{database}")
 
-    con.exec('CREATE TABLE listings(id SERIAL PRIMARY KEY, title VARCHAR(140), price INT, description VARCHAR(320), image_url VARCHAR(125), rating INT(1), capacity INT;')
+    con.exec('CREATE TABLE listings(id SERIAL PRIMARY KEY, title VARCHAR(140), price INT, description VARCHAR(320), image_url VARCHAR(125), rating INT, capacity INT);')
 
     print "☠️  Database '#{database}' has been set up.\n"
   end
