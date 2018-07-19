@@ -7,7 +7,7 @@ var api = require('../public/javascripts/jsonRequest.js')
 router.get('/', function(req, res, next) {
 
   api.apiGet(function(data) {
-    res.render('listings', { title: 'Test title', listingsJSON: data});
+    res.render('listings', { title: 'Listings', listingsJSON: data});
   });
 });
 
