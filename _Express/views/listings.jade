@@ -2,7 +2,7 @@ extends layout
 
 block content
   h1 This is the listings page
-  each listing in mockJSON.listings
+  each listing in listingsJSON.listings
     div.listing_display.
       Picture here<br>
       Title: #{listing.title}<br>
