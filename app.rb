@@ -20,6 +20,7 @@ class PiratesBNB < Sinatra::Base
       capacity: params['capacity'],
       description: params['description']
     )
+    redirect 'http://localhost:3000/listings'
   end
 
   get '/listings' do
