@@ -3,10 +3,11 @@ extends layout
 block content
   h1 This is the listings page
   each listing in listingsJSON.listings
-    div.listing_display.
-      <img src=#{listing.image_url} style="width:300px"><br>
-      Title: #{listing.title}<br>
-      Desc: #{listing.description}<br>
-      Capacity: #{listing.capacity}<br>
-      Price: #{listing.price} gold pieces<br>
-      Rating: #{'💀'.repeat(listing.rating)}<br><br>
+    a(href="listings/#{listing.id}?id=#{listing.id}") 
+      div.listing_display.
+        <img src=#{listing.image_url} style="width:300px"><br>
+        Title: #{listing.title}<br>
+        Desc: #{listing.description}<br>
+        Capacity: #{listing.capacity}<br>
+        Price: #{listing.price} gold pieces<br>
+        Rating: #{'💀'.repeat(listing.rating)}<br><br>

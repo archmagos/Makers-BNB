@@ -1,0 +1,10 @@
+extends layout
+
+block content 
+ div.listing_display.
+   <img src=#{listingJSON.image_url} style="width:300px"><br>
+   Title: #{listingJSON.title}<br>
+   Desc: #{listingJSON.description}<br>
+   Capacity: #{listingJSON.capacity}<br>
+   Price: #{listingJSON.price} gold pieces<br>
+   Rating: #{'💀'.repeat(listingJSON.rating)}<br><br>
