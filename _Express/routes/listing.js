@@ -5,10 +5,9 @@ var api = require('../public/javascripts/jsonRequest.js');
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-
-  // api.apiGet(function(data) {
-  //   res.render('listing', { title: 'Listing', listingsJSON: data});
-  // });
+  api.apiGet(function(data) {
+    res.render('listing', { title: 'Listing', listingsJSON: data, id: req.query.id});
+  });
 });
 
 module.exports = router;

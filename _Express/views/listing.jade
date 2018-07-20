@@ -1,4 +1,10 @@
 extends layout
 
-block content
- p hello world
+block content 
+ div.listing_display.
+   <img src=#{listingsJSON.listings[id-1].image_url} style="width:300px"><br>
+   Title: #{listingsJSON.listings[id-1].title}<br>
+   Desc: #{listingsJSON.listings[id-1].description}<br>
+   Capacity: #{listingsJSON.listings[id-1].capacity}<br>
+   Price: #{listingsJSON.listings[id-1].price} gold pieces<br>
+   Rating: #{'💀'.repeat(listingsJSON.listings[id-1].rating)}<br><br>

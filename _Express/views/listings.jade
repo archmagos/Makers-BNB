@@ -3,7 +3,7 @@ extends layout
 block content
   h1 This is the listings page
   each listing in listingsJSON.listings
-    a(href='http://localhost:3000/listings/#{listing.id}') 
+    a(href="listings/#{listing.id}?id=#{listing.id}") 
       div.listing_display.
         <img src=#{listing.image_url} style="width:300px"><br>
         Title: #{listing.title}<br>

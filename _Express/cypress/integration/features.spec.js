@@ -15,9 +15,9 @@ context('Listings', () => {
     cy.get('.user-input').submit()
   });
 
-  it('shows individual listing', () => {
-    cy.visit('http://localhost:3000/listings')
-    cy.get('.listing_display').click()
-      .contains('Boat')
-  });
+  // it('shows individual listing', () => {
+  //   cy.visit('http://localhost:3000/listings')
+  //   cy.get('.listing_display').click('#picture-1')
+  //     .contains('Boat')
+  // });
 });
