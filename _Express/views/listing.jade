@@ -1,13 +1,16 @@
 extends layout
 
 block content 
-  h1 #{listingJSON.title}
-  div.listing_display.
-    <img src=#{listingJSON.image_url} style="width:300px"><br>
-    Desc: #{listingJSON.description}<br>
-    Capacity: #{listingJSON.capacity}<br>
-    Price: #{listingJSON.price} gold pieces<br>
-    Rating: #{'💀'.repeat(listingJSON.rating)}<br><br>
+  div.header
+    h1 ☠️ Pirates BNB
+  div.container
+    div.listing_display.
+      <img src=#{listingJSON.image_url} style="width:600px"><br>
+      Title: #{listingJSON.title}<br>
+      Desc: #{listingJSON.description}<br>
+      Capacity: #{listingJSON.capacity}<br>
+      Price: #{listingJSON.price} gold pieces<br>
+      Rating: #{'💀'.repeat(listingJSON.rating)}<br><br>
   each booking in bookings
     div.listing_display.
       Booked by #{booking.name} for weeks #{booking.start_week}-#{booking.end_week} of 1699<br>
