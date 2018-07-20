@@ -1,7 +1,9 @@
 /// <reference types="Cypress" />
 
 context('Listings', () => {
-  beforeEach(() => {
+
+
+  it('adds a new listing and displays it on the listings page', () => {
     cy.visit('http://localhost:3000/')
     cy.get('.user-input')
       .find('#title').type('Boat')
@@ -13,14 +15,9 @@ context('Listings', () => {
     cy.get('.user-input').submit()
   });
 
-  it('adds a new listing and displays it on the listings page', () => {
-    cy.visit('http://localhost:3000/')
-    cy.get('.user-input')
-      .find('#title').type('Boat')
-      .next().type(300)
-      .next().type('Test boat')
-    cy.get('.user-input').submit()
+  it('shows individual listing', () => {
     cy.visit('http://localhost:3000/listings')
+    cy.get('.listing_display').click()
       .contains('Boat')
   });
 });
