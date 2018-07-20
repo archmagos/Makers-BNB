@@ -14,7 +14,7 @@ router.get('/', function(req, res, next) {
   api.apiGet(function(data) {
     var relevantBookings = []
     var relevantListing
-    if(bookings.length > 0) {
+    if(typeof bookings !== 'undefined' && bookings.length > 0) {
       id = req.query.id;
       relevantListing = data.listings[id - 1];
       relevantBookings = bookings.filter(booking => booking['listing_id'] == id);
