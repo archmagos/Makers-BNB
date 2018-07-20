@@ -12,9 +12,13 @@ router.get('/', function(req, res, next) {
   });
 
   api.apiGet(function(data) {
-    id = req.query.id
-    relevantListing = data.listings[req.query.id - 1];
-    relevantBookings = bookings.filter(booking => booking['listing_id'] == id)
+    var relevantBookings = []
+    var relevantListing
+    if(bookings.length > 0) {
+      id = req.query.id;
+      relevantListing = data.listings[id - 1];
+      relevantBookings = bookings.filter(booking => booking['listing_id'] == id);
+    }
     res.render('listing', {
       title: 'Listing',
       listingJSON: relevantListing,
