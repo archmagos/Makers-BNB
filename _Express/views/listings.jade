@@ -1,13 +1,15 @@
 extends layout
 
 block content
-  h1 This is the listings page
-  each listing in listingsJSON.listings
-    a(href="listings/#{listing.id}?id=#{listing.id}") 
-      div.listing_display.
-        <img src=#{listing.image_url} style="width:300px"><br>
-        Title: #{listing.title}<br>
-        Desc: #{listing.description}<br>
-        Capacity: #{listing.capacity}<br>
-        Price: #{listing.price} gold pieces<br>
-        Rating: #{'💀'.repeat(listing.rating)}<br><br>
+  div.header
+    h1 ☠️ Pirates BNB
+  div.container
+    div.listings
+      each listing in listingsJSON.listings
+        a(href="listings/#{listing.id}?id=#{listing.id}") 
+          div.listing_display.
+            <img src=#{listing.image_url} style="width:300px" class="boat_image"><br>
+            #{listing.title} • #{listing.capacity} cabins<br>
+            #{listing.description}<br>
+            #{listing.price} gold pieces per week • Free cancellation<br>
+            Rating: #{'💀'.repeat(listing.rating)}

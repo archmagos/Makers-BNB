@@ -1,10 +1,13 @@
 extends layout
 
 block content 
- div.listing_display.
-   <img src=#{listingJSON.image_url} style="width:300px"><br>
-   Title: #{listingJSON.title}<br>
-   Desc: #{listingJSON.description}<br>
-   Capacity: #{listingJSON.capacity}<br>
-   Price: #{listingJSON.price} gold pieces<br>
-   Rating: #{'💀'.repeat(listingJSON.rating)}<br><br>
+  div.header
+    h1 ☠️ Pirates BNB
+  div.container
+    div.listing_display.
+      <img src=#{listingJSON.image_url} style="width:600px"><br>
+      Title: #{listingJSON.title}<br>
+      Desc: #{listingJSON.description}<br>
+      Capacity: #{listingJSON.capacity}<br>
+      Price: #{listingJSON.price} gold pieces<br>
+      Rating: #{'💀'.repeat(listingJSON.rating)}<br><br>
