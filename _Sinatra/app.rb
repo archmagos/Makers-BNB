@@ -27,5 +27,19 @@ class PiratesBNB < Sinatra::Base
     DatabaseHandler.all
   end
 
+  post '/bookings' do
+    DatabaseHandler.create_booking(
+      name: params['name'],
+      start_week: params['start_week'],
+      end_week: params['end_week'],
+      listing_id: params['listing_id']
+    )
+    redirect 'http://localhost:3000/listings'
+  end
+
+  get '/bookings' do
+    DatabaseHandler.all_bookings
+  end
+
   run! if app_file == $PROGRAM_NAME
 end
