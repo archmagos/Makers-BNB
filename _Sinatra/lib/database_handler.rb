@@ -18,11 +18,29 @@ class DatabaseHandler
         )
   end
 
+  def self.create_booking(booking)
+    result = DatabaseConnection.query(
+        "INSERT INTO bookings (name, listing_id, start_week, end_week)
+          VALUES(
+          '#{booking[:name]}',
+          '#{booking[:listing_id]}',
+          '#{booking[:start_week]}',
+          '#{booking[:end_week]}');"
+        )
+  end
+
   def self.all
     result = DatabaseConnection.query("SELECT * FROM listings")
     # maps pg object to array of hashes and converts to json
     {'listings' => result.map { |listing| listing }}.to_json
   end
+
+  def self.all_bookings
+    result = DatabaseConnection.query("SELECT * FROM bookings")
+    # maps pg object to array of hashes and converts to json
+    {'bookings' => result.map { |booking| booking }}.to_json
+  end
+
 
   def self.is_url?(url)
     url =~ /\A#{URI::regexp(['http', 'https'])}\z/
