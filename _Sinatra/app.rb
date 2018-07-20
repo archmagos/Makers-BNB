@@ -34,7 +34,7 @@ class PiratesBNB < Sinatra::Base
       end_week: params['end_week'],
       listing_id: params['listing_id']
     )
-    redirect 'http://localhost:3000/listings'
+    redirect "http://localhost:3000/listings"
   end
 
   get '/bookings' do

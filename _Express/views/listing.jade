@@ -1,19 +1,20 @@
 extends layout
 
 block content 
+  h1 #{listingJSON.title}
   div.listing_display.
     <img src=#{listingJSON.image_url} style="width:300px"><br>
-    Title: #{listingJSON.title}<br>
     Desc: #{listingJSON.description}<br>
     Capacity: #{listingJSON.capacity}<br>
     Price: #{listingJSON.price} gold pieces<br>
     Rating: #{'💀'.repeat(listingJSON.rating)}<br><br>
-  
   each booking in bookings
     div.listing_display.
       Booked by #{booking.name} for weeks #{booking.start_week}-#{booking.end_week} of 1699<br>
-      
-    
-    
-    
- 
+  div
+    form(action='http://localhost:9292/bookings' method='post')
+      input#listing_id(type='hidden' name='listing_id' value='#{listingJSON.id}')
+      input#name(type='text' name='name' placeholder='Enter full name')
+      input#start_week(type='text' name='start_week' placeholder='Start Week')
+      input#end_week(type='text' name='end_week' placeholder='End Week')
+      input#submit(type='submit' value='Ahoy!')
